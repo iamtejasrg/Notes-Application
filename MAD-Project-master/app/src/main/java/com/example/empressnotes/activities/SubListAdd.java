@@ -24,8 +24,9 @@ public class SubListAdd extends AppCompatActivity {
         mID = getIntent().getStringExtra("id");
         title_input = findViewById(R.id.title_input);
         description_input = findViewById(R.id.list_description);
-        add_Button = findViewById(R.id.add_button);
+        add_Button = findViewById(R.id.add_button);  
         add_Button.setOnClickListener(new View.OnClickListener() {
+            
             @Override
             public void onClick(View view) {
                 DatabaseHelper myDB = new DatabaseHelper(SubListAdd.this);
